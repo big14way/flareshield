@@ -1,38 +1,53 @@
-# 🛡️ FlareShield - Parametric Insurance Protocol
+# 🛡️ FlareShield - Decentralized Parametric Insurance Protocol
 
-<div align="center">
+> Built on Flare Network | Live on Coston2 Testnet
 
-![FlareShield](https://img.shields.io/badge/FlareShield-Parametric%20Insurance-ff2d92?style=for-the-badge)
-![Flare Network](https://img.shields.io/badge/Built%20on-Flare%20Network-00d4ff?style=for-the-badge)
-![Hackathon](https://img.shields.io/badge/Hackathon-2024-00ff88?style=for-the-badge)
+[![Contract](https://img.shields.io/badge/Contract-Coston2-blue)](https://coston2-explorer.flare.network/address/0xB33EC213C33050F3a0b814dB264985fE69876948)
+[![Tests](https://img.shields.io/badge/Tests-17%2F17%20Passing-brightgreen)](#testing)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Automatic, Trustless Insurance for the Crypto Economy**
+**Live Demo:** [Vercel Deployment Coming Soon]
 
-*No claims process. No disputes. Just instant protection powered by Flare's native oracles.*
-
-[Live Demo](#) • [Documentation](#) • [Video Pitch](#)
-
-</div>
+**Contract Address:** `0xB33EC213C33050F3a0b814dB264985fE69876948`
 
 ---
 
-## 🎯 The Problem We're Solving
+## 🔴 The Problem
 
-**$11.5 billion** was lost in the UST depeg alone. Millions more vanish every year from:
-- 📉 **Flash crashes** - Assets losing 40%+ in minutes
-- 🔗 **Bridge failures** - $2B+ stolen from cross-chain bridges
-- 💱 **Stablecoin depegs** - UST, USDC (briefly), countless algorithmic failures
-- ⚡ **FAsset collateral risks** - New technology, untested edge cases
+### Traditional Insurance is Broken
 
-Traditional insurance? **Useless.** Weeks to file claims. Months to get paid. Disputes. Denials. Fine print.
+The global insurance industry faces critical challenges that leave billions underserved:
 
-**FlareShield changes everything.**
+#### 1. **Slow & Expensive Claims Processing**
+- Traditional claims take **weeks to months** to process
+- Requires extensive paperwork and manual verification
+- High operational costs (30-40% of premiums go to overhead)
+- **$100B+ in unpaid claims** annually due to disputes
+
+#### 2. **Crypto-Specific Risks Have No Coverage**
+- **$11.5B lost** in UST depeg alone
+- **$2B+ stolen** from cross-chain bridges in 2022
+- Flash crashes wipe out retail investors
+- Stablecoin depegs (USDC, UST, countless algorithmic failures)
+- No recourse, no protection
+
+#### 3. **Lack of Transparency**
+- Opaque pricing models and risk calculations
+- No visibility into reserve funds
+- Trust is centralized in institutions
+- **2.5 billion people** lack access to basic insurance
+
+#### 4. **Geographic & Economic Barriers**
+- Emerging markets underserved
+- Small-value policies unprofitable
+- Cross-border insurance complex and expensive
+- No granular, on-demand protection
 
 ---
 
-## ✨ Our Solution
+## ✅ Our Solution
 
-FlareShield is a **parametric insurance protocol** that pays out **automatically** when predefined conditions are met - no claims, no disputes, no waiting.
+**FlareShield** is a **decentralized parametric insurance protocol** that leverages Flare Network's unique data infrastructure to provide **instant, automated protection** against crypto market risks.
 
 ### How It Works
 
