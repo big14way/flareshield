@@ -6,7 +6,7 @@
 [![Tests](https://img.shields.io/badge/Tests-17%2F17%20Passing-brightgreen)](#testing)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Live Demo:** [Vercel Deployment Coming Soon]
+**Live Demo:** [https://frontend-c7f2qxixq-big14ways-projects.vercel.app](https://frontend-c7f2qxixq-big14ways-projects.vercel.app)
 
 **Contract Address:** `0xB33EC213C33050F3a0b814dB264985fE69876948`
 
