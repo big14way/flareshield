@@ -6,7 +6,7 @@
 [![Tests](https://img.shields.io/badge/Tests-17%2F17%20Passing-brightgreen)](#testing)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Live Demo:** [https://frontend-c7f2qxixq-big14ways-projects.vercel.app](https://frontend-c7f2qxixq-big14ways-projects.vercel.app)
+**Live Demo:** https://flareshield.vercel.app
 
 **Contract Address:** `0xB33EC213C33050F3a0b814dB264985fE69876948`
 
@@ -416,7 +416,7 @@ Time to receive: ~30 seconds
 
 ## 👥 Team
 
-Built with ❤️ for the Flare Hackathon 2024
+Built with ❤️ for the Flare Bangalore Hackathon 2025
 
 ---
 
@@ -430,6 +430,6 @@ MIT License - See [LICENSE](LICENSE) for details
 
 **🛡️ FlareShield - Protection at the Speed of Crypto 🛡️**
 
-[Website](#) • [Twitter](#) • [Discord](#) • [GitHub](#)
+[Website](#https://flareshield.vercel.app) • [Twitter](#) • [Discord](#) • [GitHub](#https://github.com/big14way/flareshield)
 
 </div>
