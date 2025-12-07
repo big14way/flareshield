@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "===================================="
+echo "Private Key Extraction from Keystore"
+echo "===================================="
+echo ""
+echo "To deploy, we need to extract your private key from the keystore."
+echo "You can do this manually by running:"
+echo ""
+echo "  cast wallet export my-account"
+echo ""
+echo "This will prompt for your keystore password and output the private key."
+echo ""
+echo "Then deploy with:"
+echo "  node scripts/deploy-with-pk.js <your-private-key> --network coston2"
+echo ""

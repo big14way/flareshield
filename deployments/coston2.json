@@ -1,0 +1,12 @@
+{
+  "network": "coston2",
+  "timestamp": "2025-12-07T07:34:54.737Z",
+  "deployer": "0x3C343AD077983371b29fee386bdBC8a92E934C51",
+  "contracts": {
+    "FlareShield": "0xB33EC213C33050F3a0b814dB264985fE69876948",
+    "FtsoV2": "0x3d893C53D9e8056135C26C8c638B76C8b60Df726",
+    "FdcHub": "0xa37E5beA20c8B47377cfD87E8Fd8e8C6c5F8a52f",
+    "WFLR": "0xC67DCE33D7A8efA5FfEB961899C73fe01bCe9273"
+  },
+  "chainId": "114"
+}

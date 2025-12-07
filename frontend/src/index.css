@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+:root {
+  --color-primary: #FF2D92;
+  --color-secondary: #00D4FF;
+  --color-accent: #00FF88;
+  --color-dark: #0A0A0F;
+  --color-darker: #050508;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-dark);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+  border-radius: 4px;
+}
+
+body {
+  background: var(--color-darker);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Card */
+@layer components {
+  .glass-card {
+    @apply bg-glass-light backdrop-blur-xl border border-white/10 rounded-2xl;
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    @apply bg-glass-medium border-cyber-pink/30;
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      0 0 30px rgba(255, 45, 146, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  /* Neon Button */
+  .btn-neon {
+    @apply relative px-8 py-3 font-display font-semibold text-sm uppercase tracking-wider;
+    @apply bg-gradient-to-r from-cyber-pink to-cyber-purple;
+    @apply rounded-lg overflow-hidden;
+    @apply transition-all duration-300;
+    @apply hover:shadow-neon-pink hover:scale-105;
+  }
+
+  .btn-neon::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-cyber-pink/50 to-cyber-purple/50;
+    @apply opacity-0 transition-opacity duration-300;
+  }
+
+  .btn-neon:hover::before {
+    @apply opacity-100;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply px-8 py-3 font-display font-semibold text-sm uppercase tracking-wider;
+    @apply border border-cyber-blue/50 text-cyber-blue;
+    @apply rounded-lg transition-all duration-300;
+    @apply hover:bg-cyber-blue/10 hover:border-cyber-blue hover:shadow-neon-blue;
+  }
+
+  /* Input Field */
+  .input-cyber {
+    @apply w-full bg-flare-dark/50 border border-white/10 rounded-lg;
+    @apply px-4 py-3 font-body text-white placeholder-white/30;
+    @apply focus:outline-none focus:border-cyber-pink/50 focus:ring-2 focus:ring-cyber-pink/20;
+    @apply transition-all duration-300;
+  }
+
+  /* Stats Card */
+  .stat-card {
+    @apply glass-card p-6 text-center;
+    @apply border-l-4 border-l-cyber-pink;
+  }
+
+  /* Animated Gradient Border */
+  .gradient-border {
+    position: relative;
+    background: var(--color-darker);
+    border-radius: 1rem;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+      45deg,
+      var(--color-primary),
+      var(--color-secondary),
+      var(--color-accent),
+      var(--color-primary)
+    );
+    background-size: 300% 300%;
+    border-radius: inherit;
+    z-index: -1;
+    animation: gradient 8s ease infinite;
+  }
+
+  /* Cyber Grid Background */
+  .cyber-grid-bg {
+    background-image: 
+      linear-gradient(rgba(255, 45, 146, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 45, 146, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Glowing Text */
+  .text-glow {
+    text-shadow: 
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 40px currentColor;
+  }
+
+  /* Pulse Ring */
+  .pulse-ring {
+    @apply absolute inset-0 rounded-full animate-ping;
+    @apply bg-cyber-pink/20;
+  }
+}
+
+/* Custom Animations */
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes scan-line {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Selection Colors */
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Focus Visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Number Input Arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Tooltip */
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
