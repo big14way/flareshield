@@ -8,31 +8,29 @@ Wrap your C2FLR into WFLR using the WFLR contract!
 
 ## Quick Start
 
-### Wrap 10 FLR to WFLR:
+### Wrap 10 FLR to WFLR (Easiest Method):
 ```bash
-PRIVATE_KEY=<your-key> npm run wrap:coston2
+./wrap-flr.sh
 ```
+
+This will prompt for your keystore password and wrap 10 FLR.
 
 ### Wrap a custom amount (e.g., 50 FLR):
 ```bash
-PRIVATE_KEY=<your-key> npx hardhat run scripts/wrap-flr.js --network coston2 50
+./wrap-flr.sh 50
 ```
 
-## Using the Keystore
+## Alternative: Direct PRIVATE_KEY Method
 
-If you have your private key in the Foundry keystore:
+If you have your private key directly:
 
 ```bash
-# Get your private key
-PRIVATE_KEY=$(cast wallet decrypt-keystore ~/.foundry/keystores/my-account)
-
-# Wrap FLR
-PRIVATE_KEY=$PRIVATE_KEY npm run wrap:coston2
+PRIVATE_KEY=0x<your-64-char-hex-key> npm run wrap:coston2
 ```
 
-Or in one line:
+Or wrap a custom amount:
 ```bash
-PRIVATE_KEY=$(cast wallet decrypt-keystore ~/.foundry/keystores/my-account) npm run wrap:coston2
+PRIVATE_KEY=0x<your-key> npx hardhat run scripts/wrap-flr.js --network coston2 50
 ```
 
 ## What Happens?
